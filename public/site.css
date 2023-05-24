@@ -1,0 +1,108 @@
+.case:hover {
+    transform: translate3d(0px, -20px, 0px);
+    transition: 0.5s;
+    transition-delay: 300ms;
+  }
+
+.shadow-box:hover {
+    filter: drop-shadow(0 0 0.4rem lightgrey);
+    cursor: pointer;
+}
+
+  .wave {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    font-size: 28px;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.3rem;
+    padding-left: 0.5rem;
+  }
+
+  @keyframes wave-animation {
+    0%{transform: rotate( 0.0deg);}
+    10%{transform: rotate(-10.0deg);}
+    20%{transform: rotate(12.0deg);}
+    30%{transform: rotate(-10.0deg);}
+    40%{transform: rotate(9.0deg);}
+    50%{transform: rotate( 0.0deg);}
+    100%{transform: rotate( 0.0deg);}
+  }
+
+.active {
+    text-decoration: underline;
+    color: black;
+}
+
+.active .nav-link {
+    color: black;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.navbar-nav .nav-item {
+    padding-right: 2rem;
+}
+
+#social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.mask {
+    margin-top: -3rem;
+    margin-right: 2rem;
+}
+
+.mask-2 {
+    margin-top: -3rem;
+    margin-right: 2rem;
+}
+
+.contents {
+    position: fixed;
+}
+
+.contents * {
+    color: grey;
+    width: 17rem;
+}
+
+.scrollspy {
+    position: relative;
+    /* height: 300px; */
+    overflow: auto;
+}
+
+.nav-pills .nav-link.active {
+    border-left: 10px;
+    border-color: var(--bs-nav-pills-link-active-bg);
+    background-color: transparent;
+    color: grey;
+    text-decoration: none;
+}
+
+#scrollToTopBtn {
+    background-color: white;
+    filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.3));
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 48px;
+    width: 48px;
+  }
+
+  #scrollToTopBtn:hover {
+    background-color: black;
+  }
