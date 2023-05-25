@@ -13,6 +13,12 @@
   <link rel="stylesheet" href="../public/site.css">
   <link rel="stylesheet" href="../public/footer.css">
   <link rel="icon" href="../public/uploads/favicon.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $("#arrow").click(function(){
+        $("#details").slideDown();
+      });
+    </script>
 </head>
 
 <body>
@@ -42,7 +48,7 @@
 </nav>
 
   <div class="container pt-5 px-5 pb-5 w-75">
-    <div class="row gx-5 pb-5">
+    <div class="row gx-5 pb-5 align-items-center" id="landing-screen">
       <!-- <div class="col-4 pl-5">
         <img class="pb-3" src="../public/uploads/about/jenny.gif" style="width: 100%;">
         <small>Currently seeking: New grad product design roles for 2024 + Fall 2023 co-op opportunities! Get in contact with me at jjz62@gmail.com ✉️ </small>
@@ -65,7 +71,13 @@
       </div>
     </div>
 
-    <div class="row gx-5 pt-5 pb-5">
+    <div class="row py-5">
+      <div class="col d-flex mx-auto w-100 justify-content-center">
+        <a id="arrow" class="nav-link" href="#details"><i class="bi bi-arrow-down"></i></a>
+      </div>
+    </div>
+
+    <div class="row gx-5 pt-5 pb-5" id="details">
       <div class="col">
         <h3>Experience</h3>
         <h5 class="pt-3 mb-0"><a href="https://www.cornelldti.org/">Cornell Design&Tech Initiative ↗</a><span style="opacity: 40%; margin-left: 20px;">Product Designer</span></h5>

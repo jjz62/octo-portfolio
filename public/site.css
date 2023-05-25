@@ -106,3 +106,8 @@
   #scrollToTopBtn:hover {
     background-color: black;
   }
+
+#arrow {
+    background-color: transparent;
+    border: none;
+}
