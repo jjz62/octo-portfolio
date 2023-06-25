@@ -27,10 +27,6 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--green);
 }
 
-.home * {
-    z-index: 10;
-}
-
 :root {
     --green: #05290F;
     --green-900: #0B3A18;
@@ -322,12 +318,24 @@ a:hover {
   }
   
 
-
-/* #portfolio h3 {
-    color: var(--green-600);
-} */
-
-
 nav-link:focus, .nav-link:hover {
     color: var(--green-600);
 }
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
