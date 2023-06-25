@@ -1,30 +1,30 @@
-* {
+/* * {
   border: 0;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
+ */
 :root {
   /* --bg: #e3e4e8;
   --fg: #17181c; */
-  --c1: #f42f25;
-  --c2: #f49725;
-  --c3: #255ff4;
-  --c4: #9725f4;
+  --c1: white;
+  --c2: var(--green-400);
+  --c3: var(--green-600);
+  --c4: var(--green);
   font-size: calc(8px + (12 - 8) * (100vw - 320px) / (1280 - 320));
 }
 
 body {
   /* background: var(--bg);
   color: var(--fg); */
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   font: 1em/1.5 sans-serif;
   justify-content: center;
   align-items: center;
   align-content: center;
-  height: 100vh;
+  height: 100vh; */
 }
 
 .pl3, .pl4 {
@@ -67,7 +67,7 @@ body {
 }
 
 /* Animations */
-@keyframes bounce1 {
+/* @keyframes bounce1 {
   from, to {
     transform: translateY(0) scale(1, 1);
     animation-timing-function: ease-in;
@@ -154,7 +154,7 @@ body {
   83.3% {
     transform: translateY(0) scaleY(4.5);
   }
-}
+} */
 @keyframes bounce4 {
   from, 20%, 40%, 60%, 80%, to {
     transform: scaleY(1);
