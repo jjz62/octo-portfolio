@@ -18,7 +18,7 @@
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light px-5 py-3 bg-green-100 w-100 navbar-fixed-top justify-content-between">
+<nav class="navbar navbar-expand-lg navbar-light px-5 py-3 w-100 navbar-fixed-top justify-content-between">
         <a class="navbar-brand mb-0 h1 font-weight-bold" href="/">@zhangjiaying28 </a>
         <!-- <span class="wave">👋 </span> -->
     <ul class="navbar-nav">
@@ -42,7 +42,7 @@
     </ul>
 </nav>
 
-<div class="home px-5 pt-5 mb-5 bg-green-100 pyro">
+<div class="home px-5 pt-5 mb-5 panel" data-color="green">
   <div class="before"></div>
   <div class="after"></div>
   <div class="row pt-5 justify-content-center align-middle gx-5">
@@ -94,11 +94,11 @@
   </div>
 
 <section id="portfolio">
-<div class="container pt-5">
-<div class="row pt-2 pb-5 w-100 text-center"><h3>Design ✨</h3></div>
+<div class="container pt-5 panel" data-color="white">
+<div class="row pt-2 pb-5 w-100 text-center"><h1>Design ✨</h1></div>
 <div class="row mb-5">
   <div class="col-8 case gx-5">
-  <div class="bg-green-200 pt-md-5 mr-5 text-center overflow-hidden object-fit-cover shadow-box border border-green" onclick="location.href = './zing.html';">
+  <div class="bg-green-300 pt-md-5 mr-5 text-center overflow-hidden object-fit-cover shadow-box" onclick="location.href = './zing.html';">
         <div class="p-3">
           <h2>Zing</h2>
           <p>Student grouping tool for professors and administrators</p>
@@ -142,7 +142,7 @@
 
 <div class="row mb-5">
   <div class="col-4 case gx-5">
-      <div class="bg-green-100 pt-md-5 text-center overflow-hidden object-fit-cover shadow-box" onclick="location.href = './coachera.html';">
+      <div class="bg-green-300 pt-md-5 text-center overflow-hidden object-fit-cover shadow-box" onclick="location.href = './coachera.html';">
         <div class="p-3">
           <h2>Coachera</h2>
           <p>AI-Chatboat app to conduct research study</p>
@@ -162,7 +162,7 @@
     </div>
     </div>
   <div class="col-8 case gx-5">
-  <div class="bg-green-200 pt-md-5 mr-5 text-center overflow-hidden object-fit-cover shadow-box" onclick="location.href = './clubview.html';">
+  <div class="bg-green-300 pt-md-5 mr-5 text-center overflow-hidden object-fit-cover shadow-box" onclick="location.href = './clubview.html';">
         <div class="p-3">
           <h2>Clubview</h2>
           <p>Student organization database for the Cornell community</p>
@@ -215,6 +215,32 @@
 <script src=”https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js” integrity=”sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo” crossorigin=”anonymous”></script>
 
 <script src=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js” integrity=”sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/” crossorigin=”anonymous”></script>
+
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+	<script>
+	$(window).scroll(function() {
+
+	var $window = $(window),
+	$body = $('body'),
+	$panel = $('.panel');
+
+	var scroll = $window.scrollTop() + ($window.height() / 3);
+
+	$panel.each(function () {
+	var $this = $(this);
+
+	if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+
+	$body.removeClass(function (index, css) {
+	return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+	});
+
+	$body.addClass('color-' + $(this).data('color'));
+	}
+	});    
+
+	}).scroll();
+	</script>
 </body>
 
 </html>
