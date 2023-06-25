@@ -19,6 +19,10 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--green-900);
 }
 
+.piece h1, h2, h3, h4, h5, h6 {
+    color: black;
+}
+
 #landing-screen h1, a {
     color: var(--green-600);
 }
