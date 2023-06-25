@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg-green-300 {
     /* background-color: var(--green-300); */
-    background-image: linear-gradient(to bottom right, var(--green-100), var(--green-200));
+    background-image: linear-gradient(to bottom right, var(--green-200), var(--green-300));
 }
 
 .bg-green-400 {
@@ -349,8 +349,8 @@ nav-link:focus, .nav-link:hover {
   /* scrolling color animation */
   /* Setting fade transition and default settings */
 body {
-    color: #000;
-    background-color: var(--green-200);
+    /* color: #000; */
+    background-color: white;
     transition: background-color 1s ease;
   }
   
