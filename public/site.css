@@ -1,14 +1,18 @@
-@import url("//fonts.googleapis.com/css?family=Rubik");
-@import url("//fonts.googleapis.com/css?family=Inter");
+@import url("//fonts.googleapis.com/css?family=Josefin Sans");
+@import url("//fonts.googleapis.com/css?family=Karla");
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Karla', sans-serif;
     place-items: center;
     background-color: white;
   }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
 }
 
 .home h1, h2, h3, h4, h5, h6 {
@@ -41,6 +45,7 @@ h1, h2, h3, h4, h5, h6 {
     --green-300: #DAF9E2;
     --green-400: #BAECC8;
     --bs-dropdown-link-active-bg: var(--green-600) !important;
+    --bs-nav-link-font-weight: 400;
 }
 
 .dropdown-menu li:active {
