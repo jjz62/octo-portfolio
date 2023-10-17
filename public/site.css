@@ -1,15 +1,14 @@
 @import url("//fonts.googleapis.com/css?family=Josefin Sans");
 @import url("//fonts.googleapis.com/css?family=Karla");
-@import url("//fonts.googleapis.com/css?family=SF Pro");
 
 body {
-    font-family: 'SF Pro', sans-serif;
+    font-family: 'SF Pro Text', sans-serif;
     place-items: center;
     background-color: white;
   }
 
 h1, h2, h3 {
-    font-family: 'SF Pro Display', sans-serif;
+  font-family: 'SF Pro Display', sans-serif;
 }
 
 h4, h5, h6 {
