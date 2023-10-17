@@ -5,6 +5,7 @@ body {
     font-family: 'SF Pro Text', sans-serif;
     place-items: center;
     background-color: white;
+    color: var(--bs-body-color);
   }
 
 .karla {
