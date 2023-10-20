@@ -21,7 +21,7 @@
     </script>
 </head>
 
-<body class="color-green">
+<body>
 
   <nav class="navbar navbar-expand-lg navbar-light px-5 py-3 w-100 navbar-fixed-top justify-content-between karla">
     <a class="navbar-brand mb-0 h1 font-weight-bold" href="/">@zhangjiaying28 </a>
@@ -74,7 +74,7 @@
       </div>
     </div>
 
-    <div class="row gx-5 pt-5 pb-5 mb-5" id="experience">
+    <div class="row gx-5 pt-5 pb-5 mb-5" id="experience" data-color="white">
       <div class="col">
         <h2 class="pb-3" style="color: var(--green);">Experience</h2>
       <div class="experience container">
@@ -306,6 +306,33 @@
     $(".dropdown-toggle").dropdown();
 });
 </script>
+
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+	<script>
+	$(window).scroll(function() {
+
+	var $window = $(window),
+	$body = $('body'),
+	$panel = $('.panel');
+
+	var scroll = $window.scrollTop() + ($window.height() / 3);
+
+	$panel.each(function () {
+	var $this = $(this);
+
+	if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+
+	$body.removeClass(function (index, css) {
+	return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+	});
+
+	$body.addClass('color-' + $(this).data('color'));
+	}
+	});    
+
+	}).scroll();
+	</script>
+
 </body>
 
 </html>
