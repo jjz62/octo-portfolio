@@ -65,7 +65,7 @@ a {
     background-color: var(--green-600);
 }
 
-.dropdown-menu > li > a:hover {
+.dropdown-menu > li > a:active {
   background-image: none;
   background-color: var(--green-600);
   color: white;
