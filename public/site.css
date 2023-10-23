@@ -64,6 +64,12 @@ a {
 .dropdown-menu li:active {
     background-color: var(--green-600);
 }
+
+.dropdown-menu > li > a:hover {
+  background-image: none;
+  background-color: var(--green-600);
+  color: white;
+}
   
 
 .bg-green-100 {
