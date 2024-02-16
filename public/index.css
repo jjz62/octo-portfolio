@@ -19,11 +19,11 @@ h1 {
   text-transform: uppercase;
 }
 
-.home h1, h2, h3, h4, h5, h6 {
+.home h1, h2, h3, h4, h5 {
     color: var(--green);;
 }
 
-#portfolio h1, h2, h3, h4, h5, h6 {
+#portfolio h1, h2, h3, h4, h5 {
     color: var(--green-900);
 }
 
