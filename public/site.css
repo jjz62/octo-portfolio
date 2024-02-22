@@ -2,7 +2,7 @@
 @import url("//fonts.googleapis.com/css?family=Karla");
 
 body {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'SF Pro', sans-serif;
     place-items: center;
     background-color: white;
     color: var(--bs-body-color);
@@ -17,11 +17,11 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'SF Pro Display', sans-serif;
 }
 
 h4, h5, h6 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'SF Pro Display', sans-serif;
 }
 
 a {
