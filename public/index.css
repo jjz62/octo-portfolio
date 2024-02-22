@@ -1,14 +1,14 @@
-@import url("//fonts.googleapis.com/css?family=Josefin Sans");
+@import url("//fonts.googleapis.com/css?family=DM Sans");
 @import url("//fonts.googleapis.com/css?family=Karla");
 
 body {
-    font-family: 'SF Pro Text', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     place-items: center;
     background-color: white;
   }
 
 h1, h2, h3 {
-    font-family: 'SF Pro', sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 h4, h5, h6 {

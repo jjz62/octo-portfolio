@@ -1,4 +1,4 @@
-@import url("//fonts.googleapis.com/css?family=Josefin Sans");
+@import url("//fonts.googleapis.com/css?family=DM Sans");
 @import url("//fonts.googleapis.com/css?family=Karla");
 
 body {
@@ -17,11 +17,11 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: 'SF Pro Display', sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 h4, h5, h6 {
-  font-family: 'SF Pro Display', sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 a {
