@@ -312,6 +312,7 @@ a:hover {
 
 .home {
     height: 100vh;
+    cursor: url("public/uploads/cursor.png") 45 15, auto;
 }
 
 /* Profile Flip */
