@@ -2,7 +2,7 @@
 @import url("//fonts.googleapis.com/css?family=Karla");
 
 body {
-    font-family: 'SF Pro', sans-serif;
+    font-family: 'Karla', sans-serif;
     place-items: center;
     background-color: white;
     color: var(--bs-body-color);
