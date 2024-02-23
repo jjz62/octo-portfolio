@@ -24,7 +24,7 @@
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-light px-5 py-3 w-100 navbar-fixed-top justify-content-between karla">
-    <a class="navbar-brand mb-0" href="/"><img src="public/uploads/logo.png" style="width: 15%;"></a>
+    <a class="navbar-brand mb-0" href="/"><img src="public/uploads/logo.png" class="img-fluid w-25"></a>
     <!-- <span class="wave">👋 </span> -->
 <ul class="navbar-nav">
     <li class="nav-item dropdown mr-5">
@@ -53,7 +53,7 @@
 
   <div class="container pt-5 mt-5 px-5 pb-5 w-75" id="landing-screen" data-color="green">
     <div class="row gx-5 pb-5 align-items-center">
-      <div class="col-8 pr-5">
+      <div class="col-8 pr-5" id="#intro-blurb">
         <h1 style="color: var(--green);">Nice to meet you <span class="wave">👋🏼 </span></h1>
         <!-- <p>
         While I was originally planning to pursue urban planning, I took a class called ‘Introduction to Digital Product Design’ that changed my life. I fell in love with the product design cycle and resolved to mix my experience in graphic design and problem-solving to create human-centered solutions.
@@ -79,7 +79,7 @@
 
 
       </div>
-      <div class="col-4 pl-5">
+      <div class="col-4 pl-5" id="blurb-image">
         <img src="public/uploads/about/jenny.gif" style="width: 100%; border-radius: 20px;">
       </div>
     </div>
@@ -320,31 +320,24 @@
 });
 </script>
 
-<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-	<script>
-	$(window).scroll(function() {
+<script>
+  $(window).on('resize', function() {
+  if($(window).width() < 768) {
+    $('#intro-blurb').addClass('row');
+    $('#intro-blurb').removeClass('col-8');
 
-	var $window = $(window),
-	$body = $('body'),
-	$panel = $('.panel');
+    $('#blurb-image').addClass('row');
+    $('#blurb-image').removeClass('col-4');
+  }else{
+    $('#intro-blurb').removeClass('row');
+    $('#intro-blurb').addClass('col-8');
 
-	var scroll = $window.scrollTop() + ($window.height() / 3);
-
-	$panel.each(function () {
-	var $this = $(this);
-
-	if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
-
-	$body.removeClass(function (index, css) {
-	return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
-	});
-
-	$body.addClass('color-' + $(this).data('color'));
-	}
-	});    
-
-	}).scroll();
-	</script>
+    $('#blurb-image').removeClass('row');
+    $('#blurb-image').addClass('col-4');
+  }
+  
+})
+</script>
 
 </body>
 
