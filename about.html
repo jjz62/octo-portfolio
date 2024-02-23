@@ -290,6 +290,8 @@
 
   </div>
 
+  <button id="scrollToTopBtn">☝🏼</button>
+
 </body>
 
 <footer class="bottom-0 w-100 text-center text-lg-start text-secondary mt-5 pt-5 pb-5 karla">
@@ -337,6 +339,21 @@
   }
   
 })
+</script>
+
+<script>
+  var scrollToTopBtn = document.getElementById("scrollToTopBtn")
+  var rootElement = document.documentElement
+
+function scrollToTop() {
+  // Scroll to top logic
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
+
+scrollToTopBtn.addEventListener("click", scrollToTop)
 </script>
 
 </body>

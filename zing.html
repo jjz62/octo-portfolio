@@ -392,15 +392,10 @@
                 </div>
             </div>
 
-
-
-
-
         </div>
     </div>
 
-    <!-- <button id="scrollToTopBtn">☝️</button> -->
-
+    <button id="scrollToTopBtn">☝🏼</button>
 </div>
 
 <footer class="bottom-0 w-100 text-center text-lg-start text-secondary mt-5 pt-5 pb-5 karla">
@@ -433,12 +428,18 @@
 });
 </script>
 <script>
-    $(document).ready(function(){
-            $('[data-spy="scroll"]').each(function () {
-                var $spy = $(this).scrollspy('refresh')
-                });
-        });
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn")
+    var rootElement = document.documentElement
 
+function scrollToTop() {
+    // Scroll to top logic
+    rootElement.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
+  }
+
+scrollToTopBtn.addEventListener("click", scrollToTop)
 </script>
 
 </html>
