@@ -177,15 +177,6 @@ a:hover {
     transform: translate3d(-200%, 0, 0);
   }
 
-
-
-
-/* .case:hover {
-    transform: translate3d(0px, -20px, 0px);
-    transition: 0.5s;
-    transition-delay: 300ms;
-  } */
-
 .shadow-box:hover {
     filter: drop-shadow(0 0 0.4rem lightgrey);
     cursor: pointer;
@@ -326,8 +317,6 @@ a:hover {
     background-color: transparent;
     width: auto;
     height: auto;
-    /* border: 1px solid #f1f1f1; */
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
   
   /* This container is needed to position the front and back side */
@@ -394,12 +383,6 @@ body {
   .panel {
     /* min height incase content is higher than window height */
     min-height: 100vh;
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: sans-serif; */
-    /* outline: 10px solid hotpink; */
-    /* turn above on to see the edge of panels */
   }
   
   /* colours */
@@ -514,3 +497,13 @@ body {
   -webkit-transform: translateX(4px);
   transform: translateX(4px);
 }
+
+@include media-breakpoint-up(sm) {
+  .home .col {
+
+  }
+}
+@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(lg) { ... }
+@include media-breakpoint-up(xl) { ... }
+@include media-breakpoint-up(xxl) { ... }

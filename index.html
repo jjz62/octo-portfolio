@@ -46,12 +46,10 @@
 </ul>
 </nav>
 
-<div class="home px-5 pt-5 mb-5 panel" data-color="green">
-  <div class="before"></div>
-  <div class="after"></div>
-  <div class="row pt-5 justify-content-center align-middle gx-5">
-  <div class="col-3">
-    <div class="bg-image">
+<div class="home px-5 mx-5 pt-5 mb-5 panel" data-color="green" id="intro-container">
+  <div class="row pt-5 justify-content-center align-items-center align-middle gx-5">
+  <div class="col-4 justify-content-center d-flex" id="profile-image">
+    <!-- <div class="bg-image">
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
@@ -62,13 +60,10 @@
           </div>
         </div>
       </div>
-      <!-- <img src="../public/uploads/home/profile-cartoon.jpg" class="rounded-circle w-100" alt="Girl with black hair wearing scarf"> -->
-      <!-- <div class="mask d-flex justify-content-end">
-        <span class="wave bg-white rounded-circle">&#128075;&#127996; </span>
-      </div> -->
-    </div>
+    </div> -->
+    <img src="public/uploads/home/profile-cartoon.gif" class="rounded-circle w-75" alt="Girl with black hair wearing scarf">
   </div>
-  <div class="col-8 align-self-center py-5 my-3">
+  <div class="col-8 mx-auto" id="introduction">
         <div class="row d-flex align-items-end gx-3">
           <div class="col">
             <div class="display-name">
@@ -109,10 +104,10 @@
         </div>
         <img src="public/uploads/home/zing-preview.png" style="width: 78%;">
       </div>
-  <div class="container mt-4">
-  <div class="row">
-    <div class="col-1">
-      <img src="public/uploads/home/dti-logo.svg" class="rounded-circle" style="width: 3rem;">
+  <div class="container mt-4 mx-3">
+  <div class="row justify-content-center align-items-center align-middle">
+    <div class="col-1 px-0 gx-0 mx-0">
+      <img src="public/uploads/home/dti-logo.svg" class="rounded-circle w-75">
     </div>
     <div class="col gy-0 karla">
       <p class="mb-0 pb-0">Cornell Digital Tech & Innovation</p>
@@ -130,7 +125,7 @@
         </div>
         <img class="img-fluid" src="public/uploads/home/ig-preview.png" class="shadow" style="width: 80%;">
       </div>
-    <div class="container mt-4">
+    <div class="container mt-4 mx-3">
       <div class="row">
         <!-- <div class="col-2">
           <img src="../public/uploads/home/dti-logo.svg" class="rounded-circle" style="width: 3rem;">
@@ -153,16 +148,18 @@
         </div>
         <img class="img-fluid" src="public/uploads/home/coachera-preview.png" class="shadow" style="width: 80%;">
       </div>
-      <div class="container mt-4">
-      <div class="row">
-        <div class="col-2">
-          <img src="public/uploads/home/coachera-logo.png" class="rounded-circle" style="width: 3rem;">
+      
+      <div class="container mt-4 mx-3">
+        <div class="row justify-content-center align-items-center align-middle">
+          <div class="col-2 px-0 gx-0 mx-0">
+            <img src="public/uploads/home/coachera-logo.png" class="rounded-circle w-75">
+          </div>
+          <div class="col gy-0 karla">
+            <p class="mb-0 pb-0">Cornell Future of Learning Lab</p>
+            <small class="text-muted">Summer 2022</small>
+          </div>
         </div>
-        <div class="col gy-0 karla">
-          <p class="mb-0 pb-0">Cornell Future of Learning Lab</p>
-          <small class="text-muted">Summer 2022</small>
-        </div>
-      </div>
+    
     </div>
     </div>
 
@@ -174,17 +171,17 @@
       </div>
       <img src="public/uploads/home/c1-preview.png" style="width: 62%; border-radius: 5px 5px 0px 0px;">
     </div>
-<div class="container mt-4">
-<div class="row">
-  <div class="col-1" style="width: 8%;">
-    <img src="public/uploads/home/c1-logo.jpeg" class="rounded-circle" style="width: 3rem;">
-  </div>
-  <div class="col gy-0">
-    <p class="mb-0 pb-0 karla">Capital One</p>
-    <small class="text-muted karla">Summer 2023</small>
-  </div>
-</div>
-  </div>
+    <div class="container mt-4 mx-3">
+      <div class="row justify-content-center align-items-center align-middle">
+        <div class="col-1 px-0 gx-0 mx-0">
+          <img src="public/uploads/home/c1-logo.jpeg" class="rounded-circle w-75">
+        </div>
+        <div class="col gy-0 karla">
+          <p class="mb-0 pb-0">Capital One</p>
+          <small class="text-muted">Summer 2023</small>
+        </div>
+      </div>
+
   </div>
 
 </div>
@@ -213,6 +210,7 @@
     </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+<script src="site.js"></script>
 <script>
   $(document).ready(function() {
     $(".dropdown-toggle").dropdown();
@@ -247,6 +245,33 @@
 
 	}).scroll();
 	</script>
+
+
+  <script>
+    $(window).on('resize', function() {
+    if($(window).width() < 768) {
+      $('#introduction').addClass('row');
+      $('#introduction').removeClass('col-8');
+    }else{
+      $('#introduction').addClass('col-8');
+      $('#introduction').removeClass('row');
+    }
+    if($(window).width() < 768) {
+      $('#profile-image').addClass('row');
+      $('#profile-image').addClass('pb-5');
+      $('#profile-image').removeClass('col-4');
+      $('#intro-container').removeClass('pt-5');
+      $('#intro-container').addClass('pt-2');
+    }else{
+      $('#profile-image').addClass('col-4');
+      $('#profile-image').removeClass('row');
+      $('#profile-image').removeClass('pb-5');
+      $('#intro-container').addClass('pt-5');
+      $('#intro-container').removeClass('pt-2');
+    }
+    
+})
+  </script>
 </body>
 
 </html>
