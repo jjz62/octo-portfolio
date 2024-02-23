@@ -28,6 +28,10 @@ a {
   font-family: 'Karla', sans-serif;
 }
 
+.experience a {
+  font-family: 'SF Pro Display', sans-serif;
+}
+
 .home h1, h2, h3, h4, h5, h6 {
     color: var(--green);;
 }
@@ -57,6 +61,7 @@ a {
     --green-200: #ECFFEC;
     --green-300: #DAF9E2;
     --green-400: #BAECC8;
+    --green-800: #06511c;
     --bs-dropdown-link-active-bg: var(--green-600) !important;
     --bs-nav-link-font-weight: 400;
 }
@@ -483,4 +488,29 @@ body {
   animation-fill-mode: forwards;
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
+}
+
+/* Icon Forward */
+.hvr-icon-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+.hvr-icon-forward .hvr-icon {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-icon-forward:hover .hvr-icon, .hvr-icon-forward:focus .hvr-icon, .hvr-icon-forward:active .hvr-icon {
+  -webkit-transform: translateX(4px);
+  transform: translateX(4px);
 }
