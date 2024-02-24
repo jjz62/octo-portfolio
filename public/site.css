@@ -44,8 +44,12 @@ a {
     color: black;
 }
 
-#landing-screen h1, a {
+nav h1, a {
     color: var(--green-600);
+}
+
+nav a:hover {
+  color: var(--green);
 }
 
 #landing-screen p {
@@ -118,10 +122,6 @@ h1 {
 .home p a {
     color: var(--green-600) !important;
     font-weight: 500;
-}
-
-a:hover {
-    color: var(--green);
 }
 
 
