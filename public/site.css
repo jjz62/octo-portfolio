@@ -79,10 +79,10 @@ nav a:hover {
   background-color: var(--green-600);
   color: white;
 }
-
+/* 
 .shadow-sm:hover {
   cursor: pointer;
-}  
+}   */
 
 .bg-green-100 {
     background-color: var(--green-100);
@@ -179,7 +179,6 @@ h1 {
 
 .shadow-box:hover {
     filter: drop-shadow(0 0 0.4rem lightgrey);
-    cursor: pointer;
 }
 
   .wave {
@@ -312,7 +311,6 @@ h1 {
 
 .home {
     height: 100vh;
-    cursor: url("public/uploads/cursor.png") 45 15, auto;
 }
 
 /* Profile Flip */
