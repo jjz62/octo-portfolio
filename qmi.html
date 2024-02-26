@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Queue Me In</title>
+  <script src="jquery/jquery.js"></script>
+  <script type="text/javascript" src='js/bootstrap.min.js'></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="public/site.css">
+  <link rel="stylesheet" href="public/footer.css">
+  <link rel="icon" href="public/uploads/favicon.png">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light px-5 py-3 w-100 navbar-fixed-top justify-content-between karla">
+        <a class="navbar-brand mb-0" href="/"><img src="public/uploads/logo.png" class="img-fluid w-25"></a>
+        <!-- <span class="wave">👋 </span> -->
+    <ul class="navbar-nav">
+        <li class="nav-item dropdown mr-5">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Design
+          </a>
+          <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="index.html">Home</a></li>
+            <div class="dropdown-divider"></div>
+            <h6 class="dropdown-header">Work</h6>
+            <li><a class="dropdown-item" href="cap-one.html">Capital One</a></li>
+            <li><a class="dropdown-item" href="zing.html">Zing</a></li>
+            <li><a class="dropdown-item" href="topic-rooms.html">Topic Rooms</a></li>
+            <li><a class="dropdown-item" href="coachera.html">Coachera</a></li>
+            <li><a class="dropdown-item" href="coachera.html">Queue Me In</a></li>
+            <!-- <li><a class="dropdown-item" href="clubview.html">Clubview</a></li> -->
+          </ul>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="public/uploads/home/jennyzhang-resume-23.pdf" target="blank" class="nav-link">Resume</a>
+          </li>
+    </ul>
+</nav>
+
+<div class="container piece pt-3" id="zing">
+    <div class="row justify-content-center">
+        <div data-bs-spy="scroll" data-bs-target="#navbar-cv" data-bs-offset="0" tabindex="0" class="col-9 scrollspy">
+            <div class="py-md-4 mr-5 text-center overflow-hidden object-fit-cover rounded-4" id="item-1" style="background-color: #ebf0fb;">
+                <img src="public/uploads/zing/qmi-preview.jpg" class="shadow rounded-2" style="width: 60%;">
+            </div>
+            <h1 class="pt-5">Queue Me In</h1>
+            <p class="pb-1 pt-3">Queue Me In, created by 
+                <a href="https://www.cornelldti.org/" class="text-decoration-none" style="color: #3f91e3;"><span>Cornell Digital Tech & Innovation</span></a>
+                , xhopes to make office hours an enjoyable experience for both TAs and students.</p>
+
+            <div class="container pl-0 ml-0 py-3 pb-5 px-0 mx-0">
+                <div class="row pt-3">
+                    <div class="col">
+                        <h6>Functions</h6>
+                        <p>User Research, User Testing, Ideation, Product Thinking, Documentation</p>
+                    </div>
+                    <div class="col">
+                        <h6>Team</h6>
+                        <p>2 PMs, 2 TPMs, 5 Developers, 2 Designers</p>
+                    </div>
+                    <div class="col">
+                        <h6>Timeline</h6>
+                        <ul class="list-unstyled">
+                            <li>Fall 2022 - Spring 2023</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container pl-0 ml-0 pt-5 border-top" id="item-2">
+                <div class="row pt-3">
+                    <div class="col-2">
+                        <h6 class="text-muted karla">01 - Problem</h6>
+                    </div>
+                    <div class="col">
+                        <h5>What is Zing?</h5>
+                        <p class="pt-1">Zing makes it easier for users to create student groupings.</p>
+
+                        <h5 class="mt-5">Who are Zing users?</h5>
+                        <p class="pt-1">Professors: Use Grouper to group students for projects, assignments, etc. in their classes.</p>
+                        <p>Cornell Learning Strategies Center (LSC): Use LSC to match students for their Study Partners program where students request partners to study with for a specific class.</p>
+
+                        <h5 class="mt-5" id="item-4-1">What can we fix?</h5>
+                        <p>Cornell LSC staff and professors want to create groups efficiently, but they can’t do that well because:</p>
+                        <h4 class="pt-1" style="color: var(--green-600);">1. They spend too much time sifting through a high volume of student data to make matches.</h4>
+                        <small class="font-italic text-muted"> LSC made 2,500+ study partner matches in the 2020-2021 academic year alone!</small>
+
+                        <h4 class="pt-3" style="color: var(--green-600);">2. They struggle to email each student and keep track of emails.</h4>
+                        <small class="font-italic text-muted"> There are huge volumes of students to keep up with for various requests.</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container pl-0 ml-0 pt-5" id="item-3">
+                <div class="row pt-3">
+                    <div class="col-2">
+                        <h6 class="karla text-muted mt-5 pt-3">02 - Metrics Feature (LSC)</h6>
+                    </div>
+                    <div class="col border-top">
+                        <div class="row mt-5 pt-3">
+                            <div class="col">
+                                <h6>Overview</h6>
+                                <p>Stakeholders requested for a Metrics feature to help them understand student use of the Study Partners program!</p>
+                            </div>
+                            <div class="col">
+                                <h6>User Group 👤</h6>
+                                <p> Learning Strategies Center (LSC) Administrators</p>
+                            </div>
+                            <div class="col">
+                                <h6>User Needs 🗣</h6>
+                                <ul class="mt-0 list-unstyled">
+                                    <li>Visualizations of total students, courses, requests, matches.</li>
+                                    <li>Ability to sort by college and school year.</li>
+                                    <li>High priority! User is data-centric when making decisions.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-2 mt-5">
+                        <h5>Low-Fi Entry Points</h5>
+                    </div>
+                    <div class="col mt-5">
+                        <div class="row align-items-top">
+                                <div class="col-6">
+                                    <h6 class="text-success">A. Entry points to a separate page ✅</h6>
+                                    <img src="public/uploads/zing/entry-points-1.png" style="width: 100%;">
+                                    <p class="mb-0 mt-3">Pros:</p>
+                                    <ul>
+                                        <li>More space for filtering and displaying information</li>
+                                        <li>Better visualizations possible from more space</li>
+                                    </ul>
+                                    <p class="mb-0">Cons:</p>
+                                    <ul>
+                                        <li>More clicks</li>
+                                        <li>Less visibility</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <h6>B. Card in dashboard</h6>
+                                    <img src="public/uploads/zing/entry-points-2.png" style="width: 100%;">
+                                    <p class="mb-0 mt-3">Pros:</p>
+                                    <ul>
+                                        <li>High visibility with constant view</li>
+                                        <li>Less clicks</li>
+                                    </ul>
+                                    <p class="mb-0">Cons:</p>
+                                    <ul>
+                                        <li>Constricts amount of data able to view at once</li>
+                                        <li>Reduces visualization possibilities for data</li>
+                                        <li>Diverts attention from rest of Dashboard</li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+
+                        <div class="row">
+                            <div class="col-2 mt-5">
+                                <h5 class="mt-5">High-Fi Entry Points</h5>
+                            </div>
+                            <div class="col mt-5">
+                            <img src="public/uploads/zing/entry-hi-fi.png" class="my-5 mx-auto d-block w-100">
+                        <div class="row align-items-top pt-3">
+                                <div class="col-6">
+                                    <h6 class="text-success">C. Admin dropdown menu ✅</h6>
+                                    <p class="mb-0">Pros:</p>
+                                    <ul>
+                                        <li>Feature is grouped with other admin features</li>
+                                        <li>Unintrusive to Dashboard</li>
+                                        <li>Fitting visibility for frequency of feature use</li>
+                                    </ul>
+                                    <p class="mb-0">Cons:</p>
+                                    <ul>
+                                        <li>Less visibility</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <img src="public/uploads/zing/menu-metrics.png" style="width: 100%;">
+                                </div>
+                        </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-2 mt-5 pt-3">
+                                <h5 class="mt-5">Displaying Numbers</h5>
+                            </div>
+                            <div class="col mt-5 pt-3">
+                                <img src="public/uploads/zing/number-display.png" class="my-5 mx-auto d-block w-100">
+                        <div class="row align-items-to pt-3">
+                                <div class="col-6">
+                                    <h6 class="text-success">A. Seperate Cards ✅</h6>
+                                    <p class="mb-0">Pros:</p>
+                                    <ul>
+                                        <li>Visual similarity to card style of dashboard</li>
+                                        <li>More space for text = More descriptive data</li>
+                                    </ul>
+                                    <p class="mb-0">Cons:</p>
+                                    <ul>
+                                        <li>Less clean</li>
+                                        <li>More visually prominent</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <img src="public/uploads/zing/separate-cards.png" style="width: 100%;">
+                                </div>
+                        </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-2 mt-5 pt-3">
+                                <h5>Final Screen</h5>
+                            </div>
+                            <div class="col mt-5 pt-3">
+                                <p>The metrics feature had final touches completed during high-fi iteration and was handed off for implementation by developers.</p>
+                                <img src="public/uploads/zing/metrics-final.png" class="mt-2 mx-auto d-block w-100">
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="container pl-0 ml-0 py-5" id="item-5">
+                <div class="row pt-3">
+                    <div class="col-2 mt-5 pt-3">
+                        <h6 class="karla text-muted">03 - User Research (Grouper)</h6>
+                    </div>
+                    <div class="col border-top">
+                        <p class="mt-5 pt-3">We conducted user testing with the V1 prototypes of Grouper and learned a lot...</p>
+                        <img src="public/uploads/zing/insights-solutions.png" class="py-2 mx-auto d-block w-100">
+                    </div>
+                        <div class="row">
+                            <div class="col-2 mt-5 pt-3">
+                                <h5>MVP</h5>
+                            </div>
+                            <div class="col mt-5 pt-3">
+                                <p>From these ideas, we coalesced all our thoughts into sticky notes and evaluated brainstormed features.</p>
+                                <figure class="figure">  
+                                    <img src="public/uploads/zing/mvp-features.png" class="mx-auto d-block w-100">
+                                    <figcaption class="figure-caption">Features evaluated on impact feasibility matrix.</figcaption>
+                                </figure>  
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2 mt-5 pt-3">
+                                <h5 class="mt-5">Information Hierarchy</h5>
+                            </div>
+                            <div class="col mt-5 pt-3">
+                                <figure class="figure">  
+                                    <img src="public/uploads/zing/info-hierarchy.png" class="figure-img img-fluid w-100 mx-auto d-block">
+                                    <figcaption class="figure-caption">We developed our information hierarchy from features specified in our MVP.</figcaption>
+                                </figure>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container pl-0 ml-0 py-5" id="item-6">
+                <div class="row pt-3">
+                    <div class="col-2 mt-5 pt-3">
+                        <h6 class="karla text-muted">04 - Course Archive (Grouper)</h6>
+                    </div>
+                    <div class="col border-top">
+                        <div class="row mt-5 pt-3">
+                            <div class="col">
+                                <h6>Overview</h6>
+                                <p>I focused on the Course Archive feature to help professors access previously added classes.</p>
+                            </div>
+                            <div class="col">
+                                <h6>User Group 👤</h6>
+                                <p>Course Professors</p>
+                            </div>
+                            <div class="col">
+                                <h6>User Needs 🗣</h6>
+                                <ul class="mt-0 list-unstyled">
+                                    <li>View previous courses.</li>
+                                    <li>Add previous courses into the current semester.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-2 mt-5 pt-3">
+                            <h5>Viewing Archived Courses</h5>
+                        </div>
+                        <div class="col mt-5 pt-3">
+                            <img src="public/uploads/zing/viewing-archived.png" class="py-2 mx-auto d-block w-100">
+                            <div class="row align-items-top pt-3">
+                                <div class="col-6">
+                                    <h6 class="text-success">1. Archived Courses Grouped by Semester ✅</h6>
+                                    <p class="mb-0">Pros:</p>
+                                    <ul>
+                                        <li>More organized</li>
+                                        <li>Less daunting</li>
+                                    </ul>
+                                    <p class="mb-0">Cons:</p>
+                                    <ul>
+                                        <li>More scrolling</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <img src="public/uploads/zing/grouped-sem.png" style="width: 100%;">
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-2 mt-5 pt-3">
+                            <h5>Entry Point</h5>
+                        </div>
+                        <div class="col mt-5 pt-3">
+                            <img src="public/uploads/zing/grouped-sem-options.png" class="py-2 mx-auto d-block w-100">
+                            <div class="row align-items-top pt-3">
+                                <div class="col-6">
+                                    <h6 class="text-success">B. Archive Menu Item ✅</h6>
+                                    <p>Archive in the menu is fitting due to similar features also being grouped as menu items (statistics, settings, etc.) without being too intrusive, as Archived Courses wouldn’t be viewed especially often.</p>
+                                </div>
+                                <div class="col-6">
+                                    <img src="public/uploads/zing/archive-menu-item.png" style="width: 100%;">
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-2 mt-5 pt-3">
+                            <h5>Adding Course from Archive</h5>
+                        </div>
+                        <div class="col mt-5 pt-3">
+                            <img src="public/uploads/zing/adding-course.png" class="py-2 mx-auto d-block w-100">
+                            <div class="row align-items-top pt-3">
+                                <div class="col-6">
+                                    <h6 class="text-success">1. Same Add Button (New and Existing) ✅</h6>
+                                    <p class="mb-0">Pros:</p>
+                                    <ul>
+                                        <li>Groups similar actions to be less confusing</li>
+                                        <li>User wouldn’t differentiate between the two actions when looking for entry point</li>
+                                    </ul>
+                                    <p class="mb-0">Cons:</p>
+                                    <ul>
+                                        <li>Copy between inside modal and different flows if existing in comparison to new need to be extremely clear</li>
+                                        <li>More dense</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <img src="public/uploads/zing/same-button.png" style="width: 100%;">
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-2 mt-5 pt-3">
+                            <h5>Prototype</h5>
+                        </div>
+                        <div class="col mt-5 pt-3">
+                            <img src="public/uploads/zing/add-button.gif" class="py-2 mx-auto d-block w-100">
+                        </div>
+                    </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container pl-0 ml-0 py-5 border-top" id="item-7">
+                <div class="row pt-3">
+                    <div class="col-2">
+                        <h6 class="karla text-muted">06 - Takeaways</h6>
+                    </div>
+                    <div class="col">
+                        <h5>Learning to step in...</h5>
+                        <p class="mt-3">I came onto the team when the product had already been established, which forced me to gain familiarity with an entirely new product. Maybe my biggest takeaway was learning when to question previous designs and always be ready to do better to create the great final LSC that has already been implemented and entirely handed off to our stakeholders.</p>
+
+                        <h5 class="mt-3">And learning to let go...</h5>
+                        <p class="mt-3">Especially given the super talented Zing team, we realized that we wanted to create a product that would truly be meaningful and have an impact in our community. After realizing that Grouper would unfortunately not meet those hopes, we decided to let the product go. As we talked with professors, we realized that grouping students, while annoying, was also a process they were willing and wanted to take an active part in, even though time-consuming. Given professor reluctance and the individuality of the way professors create groups depending on their classes, is this a problem space the product can truly be impactful with?</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <button class="hvr-bob" id="scrollToTopBtn">☝🏼</button>
+</div>
+
+<footer class="bottom-0 mt-5 pt-5 pb-5 karla">
+    <section class="container d-flex">
+            <div class="row align-items-center mx-5 px-5">
+              <div class="col">
+                <img src="public/uploads/logo.png" class="w-50">
+                <div class="row footer-horizontal pt-3">
+                  <ul class="list-unstyled">
+                    <li><a href="https://www.linkedin.com/in/jennifer-zhangjjz62/">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/little_zhang_/">Instagram</a></li>
+                    <li><a href="mailto: jjz62@cornell.edu">Email</a></li>
+                  </ul>
+                </div>
+            </div>
+            <div class="col-2">
+            </div>
+                <div class="col-2">
+                  <img src="public/uploads/bagel-head.png" class="w-75">
+                  <small class="font-italic text-muted lh-1">Thanks for comin 💚</small>
+                </div>
+            </div>
+    </section>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+<script src="scrolltotop.js"></script>
+<script>
+  $(document).ready(function() {
+    $(".dropdown-toggle").dropdown();
+});
+</script>
+<script>
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn")
+    var rootElement = document.documentElement
+
+function scrollToTop() {
+    // Scroll to top logic
+    rootElement.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
+  }
+
+scrollToTopBtn.addEventListener("click", scrollToTop)
+</script>
+
+</html>
