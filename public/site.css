@@ -541,3 +541,7 @@ body {
 .footer-horizontal li:hover ~ li p {
   animation: wave-animation 0.3s infinite;
 }
+
+shadow {
+  box-shadow: 0 .2rem 0.6rem rgba(0,0,0,.05)!important;
+}
